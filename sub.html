@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirley</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="sub.js"></script>
+    <script src="api.js"></script>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div id="logo"><a href="index.html"><img src="img/logoshirley.png" alt="셜리 로고 이미지"></a></div>
+            
+            <div id="search">
+            <input type="search" value="Search our store">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div id="sidemenu">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>&nbsp;<a href="#">$0.00</a></p>
+                <i class="fa-solid fa-gear" id="gear_logo">
+                    <div id="gear">
+                        <h4>Currency</h4>
+                        <ul>
+                            <li>USD - US Dollar</li>
+                            <li>EUR - Euro</li>
+                            <li>GBP - British Pound</li>
+                        </ul>
+                        <h4>Account</h4>
+                        <ul>
+                            <li>Login</li>
+                            <li>Create Account</li>
+                        </ul>
+                    </div>
+                </i>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a>
+                    <ul id="sub_nav" style="display: none;">
+                        <li><a href="#">HOME 1</a></li>
+                        <li><a href="#">HOME 2</a></li>
+                        <li><a href="#">HOME 3</a></li>
+                        <li><a href="#">HOME RTL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Books</a>
+                    <ul id="sub_nav1" style="display: none;">
+                    
+                        <ul>
+                            <li><a href="#">Children's Books</a></li>
+                            <li><a href="#">Arts & Photography</a></li>
+                            <li><a href="#">Biographies & Memoirs</a></li>
+                            <li><a href="#">Children's Books</a></li>
+                            <li><a href="#">Cookbook.Food & Wine</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Literature & Fiction</a></li>
+                        </ul>
+                    
+                    
+                        <ul>
+                            <li><a href="#">Story Book</a></li>
+                            <li><a href="#">Mystery & Suspense</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Wi-fy & Fantasy</a></li>
+                            <li><a href="#">Teen & Young Adult</a></li>
+                            <li><a href="#">Black Fashion Zapdram</a></li>
+                            <li><a href="#">Coneco Product sample</a></li>
+                        </ul>
+                    
+                    
+                        <ul>
+                            <li><a href="#">History Books</a></li>
+                            <li><a href="#">Daltex Product Example</a></li>
+                            <li><a href="#">Donkix Product Sample</a></li>
+                            <li><a href="#">Finity Product Sample</a></li>
+                            <li><a href="#">Fixair Product Sample</a></li>
+                            <li><a href="#">Geous White Bag</a></li>
+                            <li><a href="#">Geous White Dresses</a></li>
+                        </ul>
+                    
+                    
+                        <ul>
+                            <li><a href="#">Cooking book</a></li>
+                            <li><a href="#">Golddax Product Example</a></li>
+                            <li><a href="#">New Releases</a></li>
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Our Favourites</a></li>
+                            <li><a href="#">Reference Guides</a></li>
+                            <li><a href="#">Faculty Authors</a></li>
+                        </ul>
+                    
+                    </ul>
+                </li>
+                <li><a href="#">Magazines</a></li>
+                <li><a href="#">Textbooks</a></li>
+                <li><a href="#">Recomended</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Pages</a>
+                    <ul id="sub_nav2" style="display: none;">
+                        <li><a href="#">About as</a></li>
+                        <li><a href="#">Contact as</a></li>
+                        <li><a href="#">FAQ pages</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="top_menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>/
+            <li></li>
+        </ul>
+    </div>
+    <div id="book_main">
+        <div id="book_details">
+            <div id="book_pc">
+                <div id="pc_show"><img src="img/part1.webp" alt="book_img"></div>
+                <div id="pc_slide">
+                    <p id="pc_prev"><i class="fa-solid fa-angle-left"></i></p>
+                    <div id="show">
+                        <div id="hide">
+                            <div><img src="img/part1.webp" alt="book_img"></div>
+                            <div><img src="img/part2.webp" alt="book_img"></div>
+                            <div><img src="img/part3.webp" alt="book_img"></div>
+                            <div><img src="img/part4.webp" alt="book_img"></div>
+                            <div><img src="img/part5.webp" alt="book_img"></div>
+                        </div>
+                    </div>
+                    <p id="pc_next"><i class="fa-solid fa-chevron-right"></i></p>
+                </div>
+            </div>
+
+
+
+            <div id="book_buy">
+                <div id="book_title">
+                    <h2></h2>
+                    <span></span>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></li>
+                        <li>3 reviews</li>
+                    </ul>
+                    <p></p>
+                </div>
+                
+
+                <ul id="book_table">
+                    <li>
+                        <span>Book Name</span>
+                        <span class="Book_Name"></span>
+                    </li>
+                    <li>
+                        <span>Author Name</span>
+                        <span class="Author_Name"></span>
+                    </li>
+                    <li>
+                        <span>Publisher</span>
+                        <span class="publisher"></span>
+                    </li>
+                    <li>
+                        <span>Date Time</span>
+                        <span class="datetime"></span>
+                    </li>
+                </ul>
+
+                <div id="number">
+                    <div id="up_down">
+                        <div id="down">-</div>
+                        <input type="text" value="1">
+                        <div id="up">+</div>
+                    </div>
+                    <button>ADD TO CART</button>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-rotate"></i>   
+                </div>
+                <button id="Buy_it_now">Buy it now</button>
+                <div id="Categories">
+                    <span>Categories: </span>
+                    <ul>
+                        <li>Best selling book</li>,
+                        <li>Top Rated Books</li>
+                    </ul>
+                </div>
+                <div id="Share">
+                    <span>Share:</span>
+                        <ul>
+                            <li><a href="https://ko-kr.facebook.com/" target="_blank"><img src="img/facebook.png" id="facebook"></a></li>
+                            <li><a href="https://twitter.com/?lang=ko" target="_blank"><img src="img/twitter.png" id="twitter"></a></li>
+                            <li><a href="https://www.pinterest.co.kr/" target="_blank"><img src="img/pinterest.png" id="pinterest"></i></a></li>
+                        </ul>
+                </div>
+                <div id="Pay">
+                    <span>Guaranteed safe checkout</span>
+                    <div id="choose">
+                        <div><img src="img/pay1.png" alt="pay_logo"></div>
+                        <div><img src="img/pay2.png" alt="pay_logo"></div>
+                        <div><img src="img/pay3.png" alt="pay_logo"></div>
+                        <div><img src="img/pay4.png" alt="pay_logo"></div>
+                        <div><img src="img/pay5.png" alt="pay_logo"></div>
+                        <div><img src="img/pay6.png" alt="pay_logo"></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <div id="detail">
+        <div id="detail1">
+        
+            <div id="detail1_text">
+                <div class="detail">
+                    <ul>
+                        <li id="detail_Drescription">Drescription</li>
+                        <li id="detail_Comments">Comments</li>
+                        <li id="detail_Reviews">Reviews</li>
+                        <li id="detail_Size">Size Chart</li>
+                        <li id="detail_shipping">shipping Policy</li>
+                    </ul>
+                    <div id="tmpBox"></div>
+                    </li>
+                    <div id="Reviews">
+                        <div class="Reviews">
+                            <div id="Reviews1">
+                                <h2>Customer Reviews</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                <span>Based on 3 reviews</span>
+                                <a href="#">Write a review</a>
+                            </div>
+                            <div class="Reviews2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                <h3>ててて</h3>
+                                <span><em>遼太郎 on Nov 18, 2021</em></span>
+                                <p>テストです。</p>
+                                <div class="link"><a href="#">Report as Inappropriate</a></div>
+                            </div>
+                            <div class="Reviews2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                <h3>ててて</h3>
+                                <span><em>遼太郎 on Nov 18, 2021</em></span>
+                                <p>テストです。</p>
+                                <div class="link"><a href="#">Report as Inappropriate</a></div>
+                            </div>
+                            <div class="Reviews2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                <h3>Best</h3>
+                                <span><em>Dung on Sep 03, 2021</em></span>
+                                <p>very good</p>
+                                <div class="link"><a href="#">Report as Inappropriate</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Shipping">
+                    </div>
+        
+        
+        
+                </div>
+            </div>
+        
+            <div id="detail1_pc">
+                <a href="#"><img src="img/slider2.png" alt="book_img"></a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="product">
+        <div class="product_text">
+            <h2>Related products</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+        </div>
+        <div class="book1">        
+            <div class="all_part">
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="part-1">
+                       
+                         <span>Type1</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                         <span>Type2</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                        <span>Type3</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                         <span>Type4</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+    <div class="product">
+        <div class="product_text">
+            <h2>You may also like</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+        </div>
+        <div class="book1">        
+            <div class="all_part">
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="part-1">
+                       
+                         <span>Type1</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                         <span>Type2</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                        <span>Type3</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                         <span>Type4</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footerall">
+            <div class="footer-400">
+                <a href="index.html"><img src="img/logoshirley.png" alt="logo_img"></a>
+                <p>Subscribe to our newsleter, Eneter your email<br> address</p>
+                <div>
+                    <input type="value" placeholder="email@example.com"><button><i class="fa-solid fa-location-arrow"></i></button>
+                </div>
+            </div>
+            <div class="footer-200">
+                <p>Account</p>
+                <p>Login</p>
+                <p>Register</p>
+                <p>My Account</p>
+            </div>
+            <div class="footer-200">
+                <p>Footer Menu</p>
+                <p>Search</p>
+                <p>Contact Us</p>
+                <p>Shop</p>
+            </div>
+            <div class="footer-400">
+                <p>About Store</p>
+                <p>No. 96, Jecica City, NJ 07305, New York, USA</p>
+            
+                <p>Phone: 123-456-7890
+                    support@example.com</p>
+            
+                <p>Open Hours: MN - ST: 8:00AM - 9:00PM</p>
+            </div>
+            
+            
+
+        </div>
+       
+        <div id="footer_last">
+                <div id="footer_card">
+                    <div id="sns">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Linkedin</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                    <div id="text">Copyright All Right Reseved</div>
+                    <div id="card">
+                        <a href="#"><img src="img/footer_card.avif" alt="card_img"></a>
+                    </div>
+                </div>               
+            </div>
+    </footer>
+    <a href="sub.html" id="arrow-up">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import "common";
+
+#slidewrap{width:100%; height:600px; background: rgb(246, 252, 253);position: relative; overflow: hidden;}
+.slide li{@include wd; }
+
+#slider1,#slider2{ height: 600px; @include dp; }
+#slider2{display: none;}
+.maintext{width: 600px; padding: 0 15px;}
+.mainimg{width: 600px; height: 600px; transform:translateX(300px); transition: 1s;}
+.mainimg img{margin:0 -90px 0 40px ;}
+
+.maintext h1{font-size: 70px; transform: translateX(-300px); transition: 1s;}
+.maintext p{margin: 28px 0 36px; transform: translateX(-400px); transition: 1s;}
+
+.maintext button{background: none; padding: 18px 30px; transform: translateX(-500px); transition: 1s;}
+.maintext button:hover{@include hover;}
+#shoping_icon{width: 3.5%; margin-top: 2%;}
+
+#side_nav{position: absolute; top: 560px; left: 100px;}
+#side_nav div{width: 50px; height: 50px; margin: 0px 0px 13px; background: white; border-radius: 50px; @include bd1;}
+#side_nav div:hover{@include hover; cursor: pointer}
+#side_nav div i{margin: 18px 0 0 18px;}
+
+
+
+#explain{@include wd; @include dp1; height: 244px;}
+.icon{@include dp;}
+.icon div {
+    h2{font-size: 18px; line-height: 36px;}
+    p{font-size: 16px; line-height: 24px;}
+    img{width: 65%;}}
+.icon div:hover{animation: .5s ease-in-out 0s normal none 1 running tada;}
+
+#twocut{@include wd; @include dp1; padding-bottom:45px ;}
+
+#twocut1{ width:570px; height: 240px; padding-bottom: 15px; }
+.twocut img:hover a{transform: scale(1);}
+.twocut_text{position: relative; left: 40px; top:30px; color: white;}
+.twocut_text p{font-size: 18px;}
+.twocut_text h3{font-size: 32px; margin: 0px 0px 8px;}
+.twocut_text a{color: white; text-decoration: underline;}
+.twocut_text a:hover{color: #62ab00;}
+.twocut_img{position: absolute; overflow: hidden;}
+.twocut_img img:hover{transform: scale(1.05); transition: all .5s ease 0s;}
+
+
+#body {position: relative; height: 100%; background: #eee; margin: 20px 0 75px;}
+
+.swiper {width: 1903px; height: 100%; margin-left: auto; margin-right: auto;}
+
+.swiper-slide {width: 950px; height: 510px; text-align: center; font-size: 18px; background: #eee; display: flex; justify-content: center; align-items: center; @include back;}
+.swiper-slide::before{@include bf;}
+.swiper-slide:nth-of-type(1){background-image: url(../img/swiper_back1.jpg);} .swiper-slide:nth-of-type(1)::before{background: #6183a1;}
+.swiper-slide:nth-of-type(2){background-image: url(../img/swiper_back2.jpg);} .swiper-slide:nth-of-type(2)::before{background: #78797d;}
+.swiper-slide:nth-of-type(3){background-image: url(../img/swiper_back3.jpg);} .swiper-slide:nth-of-type(3)::before{background: #56838b;}
+.swiper-slide:nth-of-type(4){background-image: url(../img/swiper_back4.jpg);} .swiper-slide:nth-of-type(4)::before{background: #aaa9a0;}
+.swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
+
+.slide_in{ height:370px; z-index: 5; }
+// .slide_in{width: 850px;} 
+.slide_book{width: 253px; height:370px; background: wheat; float: left;}
+.slide_text{display: flex; flex-direction: column; align-items: baseline; color: #fff; padding: 80px 0 80px 20px;}
+.slide_text h6{width: 100%; text-align: left; font-size: 40px; padding-bottom: 13px;}
+.slide_text p{font-size: 22px; padding-bottom: 10px;}
+.slide_text span{ text-decoration: line-through; font-size: 22px}
+.slide_text button{padding: 15px 30px; margin-top: 10px; background: none; @include bd; color: #fff;}
+.slide_text button:hover{@include hover;}
+
+#time{width: 100%; height: 790px; background: url(../img/time_back.jpg); position: relative; color: #fff; display: flex; align-items: center; @include back; margin-bottom: 80px;}
+#time::before{background: #19222d; @include bf;}
+#timesale{width:1200px; height:545px; margin: 0 auto; display: flex; z-index: 5;}
+#count{width: 670px; height:464px; padding: 65px 15px;}
+#count h2{font-size: 36px; margin: -5px 0 25px;}
+#count p{margin:0 0 35px; line-height: 24px;}
+#count button{padding: 15px 30px; font-size: 16px; background: none; color: #fff; @include bd;}
+#count button:hover{@include hover;}
+
+#days{display: flex; text-align: center;  width: 670px; height: 125px; margin: 0 0 40px;}
+#days div{width: 113px; padding: 10px 25px; margin:0 0 40px; border-right: 2px solid #fff; }
+#days div:first-child{border-left: 2px solid #fff;}
+#days h3{font-size: 36px; margin:0 0 10px;}
+
+.book_slide{width: 500px; height: 574px; padding: 0 20px; overflow: hidden; position: relative;}
+.book_slide button{width: 55px; height: 55px; font-size: 34px; font-weight: 100; opacity: 0.9; display: none; position: absolute; top: 50%; transform: translateY(-50%); border-radius: 50px;}
+#prev1{ left: 0; display: none;}
+#next1{ right: 0;}
+#book_slide{width: 940px;}
+#book_slide img{width: 470px;}
+#book_slide ul li img{float: left;}
+
+#person{width: 100%; height: 350px; padding: 80px 0 35px; position: relative; background-image: url(../img/person.png); @include back;}
+#person::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: #19222d; opacity: 0.9;  }
+.person_slide{width: 1000px; margin: 0 auto; overflow: hidden; z-index: 5; position: relative;}
+#person_slide{width: 3000px; margin: 0 auto; }
+#person_slide li{float: left; width: 970px; height: 275px; color: #fff; padding: 0 15px; display: flex; justify-content: center; flex-wrap: wrap;}
+#person_slide li p{margin: 30px 97px 32px; width: 100; line-height: 32px; margin: 30px auto 32px; font-size: 16px;}
+#person_slide li h5{margin: 22px 0 0 ; text-align: center; width: 100%; font-size: 14px;}
+#person_slide img{border-radius: 50px;}
+
+
+#blogs{width: 1170px; height: 632px; padding: 80px 0 30px; margin: 0 auto; flex-wrap: wrap; @include dp1;}
+
+#blogs h2{text-align: center; font-size: 30px; line-height: 24px; padding: 0 0 60px; width: 100%;}
+.blogs{width: 370px; margin-bottom: 40px; }
+.blogs_img{width: 370px; overflow: hidden;}
+.blogs_img img{width: 100%; margin-bottom: 25px;}  .blogs_img img:hover{transform: scale(1.05); transition: all 0.5s; cursor: pointer;}
+.blogs_text{height: 197px;}
+.blogs_text a:hover{color: #62ab00;cursor: pointer;}
+.blogs_text a{font-size: 18px; margin-bottom: 20px;}
+.blogs_text span{color: #fff;}
+.blogs_text hr{border: 0.1px solid #eee;}
+.blogs_text p{font-size: 14px; line-height: 25px; color: #333;}
+.blogs_text ul{display: flex; font-size: 14px; color: gray; padding: 22px 0 25px 0;}
+// .blogs_text ul li:first-child::before{content: ""; position: absolute; right: -22px; top: 12px; width: 15px; height: 1px; background: #999898; transform: rotate(70deg);}
+
+
